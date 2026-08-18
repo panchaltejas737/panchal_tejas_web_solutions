@@ -1,0 +1,62 @@
+.section {
+  padding: 80px 24px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.swiper {
+  padding-bottom: 48px !important;
+}
+
+.testimonialCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  color: var(--color-highlight);
+  fill: var(--color-highlight);
+}
+
+.reviewText {
+  font-size: 0.95rem;
+  font-style: italic;
+  flex: 1;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.authorName {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--color-text);
+}
+
+.authorCompany {
+  font-size: 0.82rem;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 48px 24px;
+  }
+}

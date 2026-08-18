@@ -1,0 +1,35 @@
+.section {
+  margin: 40px 24px;
+  padding: 64px 24px;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary);
+  background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
+  text-align: center;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin: 24px 16px;
+    padding: 48px 20px;
+  }
+}

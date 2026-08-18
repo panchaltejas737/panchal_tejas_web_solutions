@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionPadding {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .sectionPadding {
+    padding: 48px 0;
+  }
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gridAutoFit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.softShadowHover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.softShadowHover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}

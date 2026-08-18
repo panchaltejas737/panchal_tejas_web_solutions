@@ -1,0 +1,29 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.primary {
+  background-color: rgba(26, 37, 64, 0.08);
+  color: var(--color-primary);
+}
+
+.secondary {
+  background-color: rgba(62, 110, 158, 0.1);
+  color: var(--color-secondary);
+}
+
+.highlight {
+  background-color: rgba(184, 150, 90, 0.12);
+  color: var(--color-highlight);
+}
+
+.success {
+  background-color: rgba(46, 139, 87, 0.1);
+  color: var(--color-success);
+}

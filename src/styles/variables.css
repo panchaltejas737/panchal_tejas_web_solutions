@@ -1,0 +1,66 @@
+:root {
+  /* ===== LIGHT MODE (default) ===== */
+  --color-bg: #FAFBFC;
+  --color-bg-alt: #F4F5F7;
+  --color-surface: #FFFFFF;
+
+  --color-primary: #1A2540;
+  --color-primary-hover: #263657;
+  --color-secondary: #3E6E9E;
+  --color-secondary-hover: #345C85;
+  --color-highlight: #B8965A;
+
+  --color-text: #1E2124;
+  --color-text-muted: #5B6470;
+  --color-text-on-primary: #FFFFFF;
+
+  --color-border: #E4E6EA;
+  --color-border-strong: #D1D4DA;
+
+  --color-success: #2E8B57;
+  --color-error: #C0392B;
+
+  --shadow-sm: 0 1px 2px rgba(20, 24, 34, 0.05);
+  --shadow-md: 0 4px 16px rgba(20, 24, 34, 0.08);
+  --shadow-lg: 0 12px 32px rgba(20, 24, 34, 0.12);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --font-heading: var(--font-sora), "Segoe UI", sans-serif;
+  --font-body: var(--font-inter), "Segoe UI", sans-serif;
+
+  --container-max: 1280px;
+  --transition-base: 0.25s ease;
+}
+
+[data-theme="dark"] {
+  --color-bg: #0F1420;
+  --color-bg-alt: #141922;
+  --color-surface: #1B2130;
+
+  --color-primary: #4C6FFF;
+  --color-primary-hover: #6B87FF;
+  --color-secondary: #7FA8D9;
+  --color-secondary-hover: #99BBE3;
+  --color-highlight: #C9A96E;
+
+  --color-text: #E8EAED;
+  --color-text-muted: #9AA1AC;
+  --color-text-on-primary: #FFFFFF;
+
+  --color-border: #2A2F3A;
+  --color-border-strong: #383F4C;
+
+  --color-success: #4CAF7D;
+  --color-error: #E0665A;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  transition: background-color var(--transition-base), border-color var(--transition-base), color var(--transition-base);
+}

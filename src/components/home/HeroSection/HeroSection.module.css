@@ -1,0 +1,127 @@
+.hero {
+  padding: 60px 24px 100px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.heading {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+.subtext {
+  font-size: 1.05rem;
+  max-width: 480px;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.visual {
+  position: relative;
+}
+
+.imageFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholderIcon {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.floatIconOne,
+.floatIconTwo {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.floatIconOne {
+  top: 12%;
+  left: 12%;
+}
+
+.floatIconTwo {
+  bottom: 15%;
+  right: 15%;
+}
+
+.floatingBadge {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+}
+
+.badgeNumber {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.badgeLabel {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+  .ctaGroup {
+    justify-content: center;
+  }
+  .subtext {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,141 @@
+.section {
+  padding: 80px 24px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.filterBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.filterChip {
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.filterChip:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.activeChip {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.card {
+  height: 100%;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.photoWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.corporatePhoto,
+.funPhoto {
+  object-fit: cover;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.corporatePhoto {
+  opacity: 1;
+}
+
+.funPhoto {
+  opacity: 0;
+}
+
+.card:hover .corporatePhoto {
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+.card:hover .funPhoto {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.socialOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to top, rgba(15, 20, 32, 0.55) 0%, transparent 40%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.card:hover .socialOverlay {
+  opacity: 1;
+}
+
+.socialOverlay a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.92);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  transform: translateY(10px);
+  transition: all var(--transition-base);
+}
+
+.card:hover .socialOverlay a {
+  transform: translateY(0);
+}
+
+.socialOverlay a:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.info {
+  padding: 18px 20px;
+  text-align: center;
+}
+
+.name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
