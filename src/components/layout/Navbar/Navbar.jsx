@@ -28,7 +28,7 @@ export default function Navbar() {
       <header className={cn(styles.navbar, scrolled && styles.scrolled)}>
         <div className={styles.container}>
           <Link href="/" className={styles.logo}>
-            <span className={styles.logoMark}>PT</span>
+            <span className={styles.logoMark}></span>
             <span className={styles.logoText}>{siteConfig.shortName}</span>
           </Link>
 
