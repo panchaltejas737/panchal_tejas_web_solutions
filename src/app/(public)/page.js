@@ -7,8 +7,12 @@ import TestimonialsSection from "@/components/home/TestimonialsSection/Testimoni
 import TechStackSection from "@/components/home/TechStackSection/TechStackSection";
 import CTABanner from "@/components/home/CTABanner/CTABanner";
 import ContactFormSection from "@/components/home/ContactFormSection/ContactFormSection";
-import { siteConfig } from "@/config/siteConfig";
 import FloatingWhatsApp from "@/components/home/FloatingWhatsApp/FloatingWhatsApp";
+import { siteConfig } from "@/config/siteConfig";
+
+// Forces this page to always fetch fresh data from MongoDB on every
+// request instead of being frozen as static HTML at build time.
+export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: `${siteConfig.name} | Modern Web Development Agency`,

@@ -8,6 +8,9 @@ import Project from "@/models/Project";
 import Testimonial from "@/models/Testimonial";
 import { FiInbox, FiClock, FiLayers, FiFolder, FiMessageSquare } from "react-icons/fi";
 
+// Admin data must always be live/fresh — never cache this page.
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Dashboard | Admin Panel",
   robots: { index: false, follow: false },

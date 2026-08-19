@@ -5,6 +5,8 @@ import CTABanner from "@/components/home/CTABanner/CTABanner";
 import { getAllProjects } from "@/lib/data/projects";
 import { siteConfig } from "@/config/siteConfig";
 
+export const dynamic = "force-dynamic";
+
 const pageTitle = "Our Projects";
 const pageDescription =
   "Browse our portfolio of web applications, e-commerce stores, and digital products built for real clients.";

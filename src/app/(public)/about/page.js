@@ -1,11 +1,13 @@
 import AboutHero from "@/components/about/AboutHero/AboutHero";
 import OurStorySection from "@/components/about/OurStorySection/OurStorySection";
 import CoreValuesSection from "@/components/about/CoreValuesSection/CoreValuesSection";
+import TeamGrid from "@/components/about/TeamGrid/TeamGrid";
 import ProcessTimelineSection from "@/components/about/ProcessTimelineSection/ProcessTimelineSection";
 import CTABanner from "@/components/home/CTABanner/CTABanner";
-import { siteConfig } from "@/config/siteConfig";
-import TeamGrid from "@/components/about/TeamGrid/TeamGrid";
 import { getTeamMembers } from "@/lib/data/team";
+import { siteConfig } from "@/config/siteConfig";
+
+export const dynamic = "force-dynamic";
 
 const pageTitle = "About Us";
 const pageDescription =

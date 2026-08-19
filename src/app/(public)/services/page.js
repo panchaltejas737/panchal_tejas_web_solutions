@@ -3,6 +3,7 @@ import ServicesList from "@/components/services/ServicesList/ServicesList";
 import CTABanner from "@/components/home/CTABanner/CTABanner";
 import { siteConfig } from "@/config/siteConfig";
 
+export const dynamic = "force-dynamic";
 
 const pageTitle = "Our Services";
 const pageDescription =
