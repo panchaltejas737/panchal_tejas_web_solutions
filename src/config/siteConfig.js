@@ -9,15 +9,13 @@ export const siteConfig = {
     email: "panchaltejas737@gmail.com",
     phone: "+91 72268 33799",
     whatsapp: "917226833799",
-    address: "Surat, Gujarat, India",
+    address: "Mandvi Barodia Vad, Surat - 394160",
   },
   map: {
-    // Replace embedUrl with your exact business address embed link from Google Maps
-    // (Google Maps → Share → Embed a map → copy the src URL from the iframe)
     embedUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117481.5!2d72.8311!3d21.1702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDEwJzEyLjciTiA3MsKwNDknNTIuMCJF!5e0!3m2!1sen!2sin!4v1700000000000",
-    latitude: 21.1702,
-    longitude: 72.8311,
+      "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d238190.17289646764!2d72.94503952603152!3d21.12366855239905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMandvi%20barodia%20vad%20%2Csurat%20394160!5e0!3m2!1sen!2sin!4v1787233280089!5m2!1sen!2sin",
+    latitude: 21.1236685,
+    longitude: 72.9450395,
   },
   social: {
     facebook: "https://facebook.com",
