@@ -37,13 +37,13 @@ export async function POST(request) {
     try {
       await Promise.all([
         resend.emails.send({
-          from: `${siteConfig.name} <onboarding@resend.dev>`,
+          from: `${siteConfig.name} <contact@panchaltejaswebsolution.com>`,
           to: process.env.ADMIN_EMAIL,
           subject: `New Inquiry: ${subject}`,
           html: adminNotificationTemplate({ name, email, phone, subject, message }),
         }),
         resend.emails.send({
-          from: `${siteConfig.name} <onboarding@resend.dev>`,
+          from: `${siteConfig.name} <contact@panchaltejaswebsolution.com>`,
           to: email,
           subject: `Thank you for contacting ${siteConfig.name}`,
           html: thankYouTemplate({ name }),
